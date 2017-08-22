@@ -13,6 +13,10 @@
 		283C676E1F4C18AD003EB143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C676C1F4C18AD003EB143 /* Main.storyboard */; };
 		283C67701F4C18AD003EB143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283C676F1F4C18AD003EB143 /* Assets.xcassets */; };
 		283C67731F4C18AD003EB143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C67711F4C18AD003EB143 /* LaunchScreen.storyboard */; };
+		283C677D1F4C5F5D003EB143 /* BaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C677C1F4C5F5D003EB143 /* BaseCommand.m */; };
+		283C67801F4C6088003EB143 /* FirstCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C677F1F4C6088003EB143 /* FirstCommand.m */; };
+		283C67831F4C6223003EB143 /* SecondCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C67821F4C6223003EB143 /* SecondCommand.m */; };
+		283C67861F4C63EB003EB143 /* CommandExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C67851F4C63EB003EB143 /* CommandExecutor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		283C676F1F4C18AD003EB143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283C67721F4C18AD003EB143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		283C67741F4C18AD003EB143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283C677B1F4C5F5D003EB143 /* BaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCommand.h; sourceTree = "<group>"; };
+		283C677C1F4C5F5D003EB143 /* BaseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCommand.m; sourceTree = "<group>"; };
+		283C677E1F4C6088003EB143 /* FirstCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCommand.h; sourceTree = "<group>"; };
+		283C677F1F4C6088003EB143 /* FirstCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCommand.m; sourceTree = "<group>"; };
+		283C67811F4C6223003EB143 /* SecondCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCommand.h; sourceTree = "<group>"; };
+		283C67821F4C6223003EB143 /* SecondCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCommand.m; sourceTree = "<group>"; };
+		283C67841F4C63EB003EB143 /* CommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandExecutor.h; sourceTree = "<group>"; };
+		283C67851F4C63EB003EB143 /* CommandExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandExecutor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			children = (
 				283C67661F4C18AD003EB143 /* AppDelegate.h */,
 				283C67671F4C18AD003EB143 /* AppDelegate.m */,
+				283C677A1F4C5F1D003EB143 /* Models */,
 				283C67691F4C18AD003EB143 /* ViewController.h */,
 				283C676A1F4C18AD003EB143 /* ViewController.m */,
 				283C676C1F4C18AD003EB143 /* Main.storyboard */,
@@ -77,6 +90,21 @@
 				283C67641F4C18AD003EB143 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		283C677A1F4C5F1D003EB143 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				283C677B1F4C5F5D003EB143 /* BaseCommand.h */,
+				283C677C1F4C5F5D003EB143 /* BaseCommand.m */,
+				283C677E1F4C6088003EB143 /* FirstCommand.h */,
+				283C677F1F4C6088003EB143 /* FirstCommand.m */,
+				283C67811F4C6223003EB143 /* SecondCommand.h */,
+				283C67821F4C6223003EB143 /* SecondCommand.m */,
+				283C67841F4C63EB003EB143 /* CommandExecutor.h */,
+				283C67851F4C63EB003EB143 /* CommandExecutor.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +181,11 @@
 			files = (
 				283C676B1F4C18AD003EB143 /* ViewController.m in Sources */,
 				283C67681F4C18AD003EB143 /* AppDelegate.m in Sources */,
+				283C677D1F4C5F5D003EB143 /* BaseCommand.m in Sources */,
 				283C67651F4C18AD003EB143 /* main.m in Sources */,
+				283C67861F4C63EB003EB143 /* CommandExecutor.m in Sources */,
+				283C67801F4C6088003EB143 /* FirstCommand.m in Sources */,
+				283C67831F4C6223003EB143 /* SecondCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
